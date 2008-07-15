@@ -318,7 +318,7 @@ class CustomItemImpl extends CustomItem {
                 return false;
             }
             currentIndex -= 1;
-        }
+        } 
         //  repaint();
         return true;
     }

@@ -52,7 +52,11 @@ else
         ifeq ($(PLATFORM), javacall)
             include $(TIMEZONE_DIR)/$(PLATFORM)/lib.gmk
         else
-            include $(TIMEZONE_DIR)/posix/lib.gmk
+            ifeq ($(PLATFORM), sdl)
+                include $(TIMEZONE_DIR)/$(PLATFORM)/lib.gmk
+            else
+                include $(TIMEZONE_DIR)/posix/lib.gmk
+            endif
         endif
     endif
 endif

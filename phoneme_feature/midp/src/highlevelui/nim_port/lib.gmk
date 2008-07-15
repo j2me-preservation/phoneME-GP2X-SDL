@@ -48,7 +48,11 @@ SUBSYSTEM_NIM_EXTRA_INCLUDES += -I$(NIM_PORT_DIR)/include
 # ------- uncomment only one of the below --------------
 
 # stubs implementation is used for all platforms 
-include $(NIM_PORT_DIR)/stubs/lib.gmk
+ifeq ($(PLATFORM), sdl)
+    include $(NIM_PORT_DIR)/sdl/lib.gmk
+else
+    include $(NIM_PORT_DIR)/stubs/lib.gmk
+endif
 
 # example implementation may be used for all platforms instead of stubs
 # (BUT: the example is not meaningful in the end product)

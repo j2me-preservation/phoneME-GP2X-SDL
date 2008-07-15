@@ -119,7 +119,8 @@ ASMGEN_OPTIONS	+= +GenerateGNUCode
 
 ifneq ($(TARGET_VM), cdc_vm)
 # CDC port is not yet clear of warnings.
-EXTRA_CFLAGS	+= -Werror
+#EXTRA_CFLAGS	+= -Werror
+EXTRA_CFLAGS	+= 
 endif
 
 EXTRA_CFLAGS	+= -W -Wall

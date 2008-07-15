@@ -90,8 +90,8 @@ KNI_ReturnVoid();
 */
 
 KNIEXPORT KNI_RETURNTYPE_INT Java_com_sun_mmedia_QSoundHiddenManager_nInitQSound()
-{
-KNI_ReturnInt(0);
+{ printf("nInitQSound()\n");
+  KNI_ReturnInt(0);
 }
 
 

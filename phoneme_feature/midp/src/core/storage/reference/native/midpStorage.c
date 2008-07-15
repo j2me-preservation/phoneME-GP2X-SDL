@@ -101,7 +101,7 @@ PCSL_DEFINE_STATIC_ASCII_STRING_LITERAL_END(CONFIG_SUBDIR);
  * the <tt>storageSetTotalSpace</tt> method or providing the configuration
  * value system.jam_space (see midpInit.c).
  */
-#define DEFAULT_TOTAL_SPACE (4 * 1024 * 1024) /* 4 Meg. */
+#define DEFAULT_TOTAL_SPACE (32 * 1024 * 1024) /* 32 Meg. */
 
 /*
  * Number of the supported storages: 2 for internal and only one external.

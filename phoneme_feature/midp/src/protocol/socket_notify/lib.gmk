@@ -37,8 +37,8 @@
 # Adds to global SUBSYSTEMS list
 #
 SUBSYSTEMS += socket_notify
-ifeq ($(TARGET_VM), cldc_vm)
-ifneq (,$(findstring linux_,$(PLATFORM)))
+#ifeq ($(TARGET_VM), cldc_vm)
+#ifneq (,$(findstring linux_,$(PLATFORM)))
 
 # vpath for ( socket_notify ) subsystem
 #
@@ -53,5 +53,5 @@ SUBSYSTEM_SOCKET_NOTIFY_NATIVE_FILES += \
 SUBSYSTEM_SOCKET_NOTIFY_EXTRA_INCLUDES += \
     -I$(SUBSYSTEM_DIR)/protocol/socket_notify/include
 
-endif
-endif
+#endif
+#endif

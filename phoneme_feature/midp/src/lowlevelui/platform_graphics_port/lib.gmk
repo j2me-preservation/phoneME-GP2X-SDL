@@ -47,5 +47,9 @@ include $(SUBSYSTEM_LOWUI_DIR)/platform_graphics_port/linux_qte/$(LIB_MAKE_FILE)
 else
     ifeq ($(PLATFORM), stubs)
         include $(SUBSYSTEM_LOWUI_DIR)/platform_graphics_port/stubs/$(LIB_MAKE_FILE)
+    else
+        ifeq ($(PLATFORM), sdl)
+            include $(SUBSYSTEM_LOWUI_DIR)/platform_graphics_port/sdl/$(LIB_MAKE_FILE)
+        endif
     endif
 endif

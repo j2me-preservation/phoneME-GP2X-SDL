@@ -44,5 +44,9 @@ SUBSYSTEM_PTI_EXTRA_INCLUDES += -I$(PTI_PORT_DIR)/include
 ifeq ($(PLATFORM), javacall)
     include $(PTI_PORT_DIR)/javacall/lib.gmk
 else
-    include $(PTI_PORT_DIR)/stubs/lib.gmk
+    ifeq ($(PLATFORM), sdl)
+        include $(PTI_PORT_DIR)/sdl/lib.gmk
+    else
+        include $(PTI_PORT_DIR)/stubs/lib.gmk
+    endif
 endif

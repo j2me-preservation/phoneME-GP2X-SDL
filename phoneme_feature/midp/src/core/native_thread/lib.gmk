@@ -56,7 +56,11 @@ else
           ifeq ($(PLATFORM), javacall)
               include $(NATIVE_THREAD_DIR)/stubs/lib.gmk
           else
-              include $(NATIVE_THREAD_DIR)/pthread/lib.gmk
+              ifeq ($(PLATFORM), sdl)
+                  include $(NATIVE_THREAD_DIR)/sdl/lib.gmk
+              else
+                  include $(NATIVE_THREAD_DIR)/pthread/lib.gmk
+              endif
           endif
       endif
    endif

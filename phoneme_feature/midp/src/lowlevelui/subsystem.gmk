@@ -51,16 +51,19 @@ ifeq ($(PLATFORM), linux_qte)
     SUBSYSTEM_GRAPHICS_MODULES = platform_graphics
 else
     ifneq ($(PLATFORM), linux_gci)
-      ifeq ($(PLATFORM), stubs)
-          ifndef SUBSYSTEM_GRAPHICS_MODULES
-              SUBSYSTEM_GRAPHICS_MODULES = platform_graphics
-          endif
-      else
-          SUBSYSTEM_GRAPHICS_MODULES = putpixel
-      endif
+        ifeq ($(PLATFORM), stubs)
+            ifndef SUBSYSTEM_GRAPHICS_MODULES
+                SUBSYSTEM_GRAPHICS_MODULES = platform_graphics
+            endif
+        else
+            SUBSYSTEM_GRAPHICS_MODULES = putpixel
+        endif
     endif
 endif
 
+ifeq ($(PLATFORM), sdl)
+    SUBSYSTEM_GRAPHICS_MODULES = putpixel
+endif
 
 #####################################################################
 # Graphics util Subsystem
