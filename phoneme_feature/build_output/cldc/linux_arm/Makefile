@@ -1,5 +1,5 @@
 #
-#  
+#   
 #
 # Copyright  1990-2007 Sun Microsystems, Inc. All Rights Reserved.
 # DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER
@@ -12,7 +12,6 @@
 # WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 # General Public License version 2 for more details (a copy is
-# included at /legal/license.txt).
 # 
 # You should have received a copy of the GNU General Public License
 # version 2 along with this work; if not, write to the Free Software
@@ -22,20 +21,13 @@
 # Please contact Sun Microsystems, Inc., 4150 Network Circle, Santa
 # Clara, CA 95054 or visit www.sun.com if you need additional
 # information or have any questions.
-# 
-# This source file is specific for Qt-based configurations.
 #
-######################################################################
-# SDL Embedded specific defines and targets
-######################################################################
 
-EXTRA_CFLAGS += -D_GNU_SOURCE=1 -D_REENTRANT 
-EXTRA_INCLUDES  += `sdl-config --cflags`
+# Master Makefile for linux_arm build.
 
-ifeq ($(TARGET_CPU), arm)
-  LIBS	+= -lSDL -lSDL_image -lSDL_mixer -lm #-lfloat
-else
-  LIBS	+= -lSDL -lSDL_image -lSDL_mixer -lm
-endif
+# See ../../docs/HowToBuild.txt for build instructions. See
+# ../share/README for an explanation of the build system and how to
+# create a build system for a new configuration.
 
-
+IsSelfHosted = false
+include /home/baro/dev/caanoo/phoneME-SDL-1.0.1-src/phoneme_feature/cldc/build/share/root.make

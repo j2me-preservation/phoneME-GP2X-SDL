@@ -33,6 +33,7 @@
 PCSL_DIR		= $(CURDIR)/../..
 PRINT_MODULE            = stdout
 
+
 # include top.gmk for various directory and module definitions
 ifdef PCSL_PLATFORM
 include $(PCSL_DIR)/makefiles/top.gmk

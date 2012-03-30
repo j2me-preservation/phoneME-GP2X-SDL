@@ -1,0 +1,61 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  Internal Error (4F533F4C494E55583F491418160E4350500385), pid=10167, tid=4149307072
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_19-b04 mixed mode)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0xffacd000,0xffcbf000)
+[error occurred during error reporting, step 110, id 0xb]
+
+
+[error occurred during error reporting, step 120, id 0xb]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+VM state:not at safepoint (not fully initilizated)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+
+[error occurred during error reporting, step 190, id 0xb]
+
+Dynamic libraries:
+Can not get library information for pid = 10167
+
+VM Arguments:
+java_command: <unknown>
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/opt/java
+PATH=/root/dev/j2sdk1.4.2_19/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/opt/kde/bin:/usr/local/bin:/usr/local/sbin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/qt/bin:/home/baro/mybin/:/usr/bin/vendor_perl/:/home/baro/mybin/:/usr/bin/vendor_perl/
+LD_LIBRARY_PATH=/root/dev/j2sdk1.4.2_19/jre/lib/i386/client:/root/dev/j2sdk1.4.2_19/jre/lib/i386:/root/dev/j2sdk1.4.2_19/jre/../lib/i386
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Linux
+uname:Linux 3.2.12-1-ARCH #1 SMP PREEMPT Mon Mar 19 17:50:01 CET 2012 i686
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK 8192k, CORE 0k, NPROC 128230, NOFILE 4096, AS infinity
+load average:-39144201689847761975646655953051503432654641334869128140196754893260054905950011120751488781691803428675538869214633017292710251784501984132777998076838845082306434237164478778366029882331312427539105874165619403982427174502489026019134629963091862877776347629834364970934530454975612040545524290093244743680.00 0.00 -39140429988945959415823218562244123886879121621140678999820735598174038759544817722019406149233528737735218272682833649076678421612668247984131938423224480143343728861642429354689133151989508704261057760067861557999051396254917441775827368079956713259922153241794897494243143390557834521501773158333974315008.00
+
+CPU:total 1 
+
+Memory: 4k page, physical 4008k(3651k free), swap 3249k(3249k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.4.2_19-b04) for linux-x86, built on Nov  9 2008 22:21:09 by unknown with unknown compiler
+

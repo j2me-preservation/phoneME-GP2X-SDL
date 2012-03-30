@@ -30,22 +30,30 @@
 ######################################################################
 ifdef GNU_TOOLS_DIR
     GNU_TOOLS_BINDIR=$(GNU_TOOLS_DIR)/bin/
+    EXTRA=arm-gph-linux-gnueabi-
 else
     ifeq ($(PCSL_CPU), arm)
-	GNU_TOOLS_DIR=/opt/Embedix/tools/arm-linux
+	GNU_TOOLS_DIR=/home/baro/dev/caanoo/GPH_SDK/tools/gcc-4.2.4-glibc-2.7-eabi
 	GNU_TOOLS_BINDIR=$(GNU_TOOLS_DIR)/bin/
+	EXTRA=arm-gph-linux-gnueabi-
     else
 	# Otherwise, use gcc command from path
 	GNU_TOOLS_BINDIR=
+	EXTRA=
     endif
 endif
 
 GCC_VERSION	=
 
-CC		= $(GNU_TOOLS_BINDIR)gcc$(GCC_VERSION)
-CPP		= $(GNU_TOOLS_BINDIR)g++$(GCC_VERSION)
-LD		= $(GNU_TOOLS_BINDIR)g++$(GCC_VERSION)
-AR		= $(GNU_TOOLS_BINDIR)ar -rc
+CC		= $(GNU_TOOLS_BINDIR)$(EXTRA)gcc$(GCC_VERSION)
+CPP		= $(GNU_TOOLS_BINDIR)$(EXTRA)g++$(GCC_VERSION)
+LD		= $(GNU_TOOLS_BINDIR)$(EXTRA)g++$(GCC_VERSION)
+AR		= $(GNU_TOOLS_BINDIR)$(EXTRA)ar -rc
+
+#CC		= $(GNU_TOOLS_BINDIR)arm-gph-linux-gnueabi-gcc$(GCC_VERSION)
+#CPP		= $(GNU_TOOLS_BINDIR)arm-gph-linux-gnueabi-g++$(GCC_VERSION)
+#LD		= $(GNU_TOOLS_BINDIR)arm-gph-linux-gnueabi-g++$(GCC_VERSION)
+#AR		= $(GNU_TOOLS_BINDIR)arm-gph-linux-gnueabi-ar -rc
 
 CC_OUTPUT=-o 
 AR_OUTPUT=

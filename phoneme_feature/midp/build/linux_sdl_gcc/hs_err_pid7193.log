@@ -1,0 +1,62 @@
+#
+# An unexpected error has been detected by HotSpot Virtual Machine:
+#
+#  Internal Error (4F533F4C494E55583F491418160E4350500385), pid=7193, tid=4149761728
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.2_19-b04 mixed mode)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0xffc45000,0xffe37000)
+[error occurred during error reporting, step 110, id 0xb]
+
+
+[error occurred during error reporting, step 120, id 0xb]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+VM state:not at safepoint (not fully initilizated)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+
+[error occurred during error reporting, step 190, id 0xb]
+
+Dynamic libraries:
+Can not get library information for pid = 7193
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true
+java_command: com.sun.midp.skinromization.SkinRomizationTool -xml /root/dev/caanoo/phoneME-SDL-1.0.1-src/phoneme_feature/build_output/midp/generated/merged.xml -imagedir /root/dev/caanoo/phoneME-SDL-1.0.1-src/phoneme_feature/midp/build/linux_sdl_gcc/../../src/highlevelui/lcdlf/lfjava/resource/skin -outbin /root/dev/caanoo/phoneME-SDL-1.0.1-src/phoneme_feature/build_output/midp/generated/lib/skin.bin -outc /root/dev/caanoo/phoneME-SDL-1.0.1-src/phoneme_feature/build_output/midp/generated/lfj_image_rom.c
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/opt/java
+PATH=/root/dev/j2sdk1.4.2_19/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/opt/kde/bin:/usr/local/bin:/usr/local/sbin:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/qt/bin:/home/baro/mybin/:/usr/bin/vendor_perl/:/home/baro/mybin/:/usr/bin/vendor_perl/
+LD_LIBRARY_PATH=/root/dev/j2sdk1.4.2_19/jre/lib/i386/client:/root/dev/j2sdk1.4.2_19/jre/lib/i386:/root/dev/j2sdk1.4.2_19/jre/../lib/i386
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Linux
+uname:Linux 3.2.12-1-ARCH #1 SMP PREEMPT Mon Mar 19 17:50:01 CET 2012 i686
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK 8192k, CORE 0k, NPROC 128230, NOFILE 4096, AS infinity
+load average:-108798152253341020877828850707501006119725448624081463764827028095469017816630382885240197222440288632714256577035764643107932015053800125602444050219324126621092950906544595548036152590182872592363573757813750605246590576314212989922913230547764773167844248500516922496167961305814224240354375250584010752000.00 0.00 -108783065449733810638535101144271487936623369769167667203322950915124953231009609290311866692607189868952974190908567170243804694366465181007859811604866666865242129404456397853328565668815657699251381301422719221313087463323926652949684183015224174696427470948359052589402413048143114164179370723546929037312.00
+
+CPU:total 1 
+
+Memory: 4k page, physical 4008k(3651k free), swap 3249k(3249k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.4.2_19-b04) for linux-x86, built on Nov  9 2008 22:21:09 by unknown with unknown compiler
+

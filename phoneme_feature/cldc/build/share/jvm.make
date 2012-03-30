@@ -1563,9 +1563,9 @@ CPP_FLAGS_EXPORT         = $(CPP_DEF_FLAGS) $(CPLUSPLUS_FLAGS)
 
 CPP_FLAGS                = $(CPP_FLAGS_EXPORT) $(CPP_INCLUDE_DIRS)
 
-ifneq ($(ENABLE_COMPILATION_WARNINGS), true)
-CPP_FLAGS               += -Werror
-endif
+#ifneq ($(ENABLE_COMPILATION_WARNINGS), true)
+#CPP_FLAGS               += -Werror
+#endif
 
 LINK_OPT_FLAGS_debug    = $(DEBUG_SYMBOLS_FLAGS)
 LINK_OPT_FLAGS_release  =

@@ -24,7 +24,7 @@
 # information or have any questions.
 #
 
-.arch i486
+.arch i586
 .text
 .align 16
 
