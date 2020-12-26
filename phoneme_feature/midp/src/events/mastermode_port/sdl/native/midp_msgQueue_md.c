@@ -77,8 +77,8 @@ void InitGP2XKeys()
 void KeyboardCheck(SDL_Event *event, MidpReentryData* pNewSignal, MidpEvent* pNewMidpEvent)
 { int Key = KEYMAP_KEY_INVALID;
   switch(event->key.keysym.sym)
-        { case SDLK_LSUPER: Key = KEYMAP_KEY_SOFT1; break;
-          case SDLK_MENU:   Key = KEYMAP_KEY_SOFT2; break;
+        { case SDLK_TAB: Key = KEYMAP_KEY_SOFT1; break;
+          case SDLK_BACKSPACE:   Key = KEYMAP_KEY_SOFT2; break;
           case SDLK_UP:     Key = KEYMAP_KEY_UP; break;
           case SDLK_DOWN:   Key = KEYMAP_KEY_DOWN; break;
           case SDLK_LEFT:   Key = KEYMAP_KEY_LEFT; break;

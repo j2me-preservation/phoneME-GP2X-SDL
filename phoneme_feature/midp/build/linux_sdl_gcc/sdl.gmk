@@ -30,7 +30,7 @@
 ######################################################################
 
 EXTRA_CFLAGS += -D_GNU_SOURCE=1 -D_REENTRANT 
-EXTRA_INCLUDES  += -I/usr/include/SDL 
+EXTRA_INCLUDES  += -I/opt/gcc-3.4.6/include/SDL 
 
 ifeq ($(TARGET_CPU), arm)
   LIBS	+= -lSDL -lSDL_image -lSDL_mixer -lm -lfloat
