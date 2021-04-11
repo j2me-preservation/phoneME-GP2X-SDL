@@ -4,7 +4,7 @@ set -e
 export ENABLE_COMPILATION_WARNINGS=true
 export USE_DEBUG_ROMGEN_SYMBOLS=true
 
-export MEHOME=~/phoneme_feature
+export MEHOME=$(pwd)/phoneme_feature
 mkdir -p $MEHOME/build_output 
 export BUILD_OUTPUT_DIR=$MEHOME/build_output
 export JDK_DIR=~/j2sdk1.4.2_19
